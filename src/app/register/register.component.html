@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 p-5 border border-2 shadow">
+            <h2 class="fw-bolder my-2">Register</h2>
+            <form action="" [formGroup]="regform"  (ngSubmit)="signup()">
+                <div class="mb-3">
+                    <label for="">Username</label>
+                    <input type="text" placeholder="enter username" class="form-control" formControlName="username" >
+                    <span class="form-text text-danger" *ngIf="username?.touched&&username?.invalid">Enter a valid username</span>
+                </div>
+                <div class="mb-3">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="enter email" class="form-control" formControlName="email">
+                    <span class="form-text text-danger" *ngIf="email?.touched&&email?.invalid">Enter a valid email</span>
+                </div>
+                <div class="mb-3">
+                    <label for="">password</label>
+                    <input type="password" placeholder="" class="form-control" formControlName="password" >
+                    <span class="form-text text-danger" *ngIf="regform.get('password')?.touched&&regform.get('password')?.invalid">Enter a valid password</span>
+                </div>
+                <div class="mb-3">
+                    <button type="submit"  [disabled]="regform.invalid" >register</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>

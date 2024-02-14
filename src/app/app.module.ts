@@ -9,6 +9,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BmiComponent } from './bmi/bmi.component';
 import { ConverterComponent } from './converter/converter.component';
 import { MetertocmComponent } from './metertocm/metertocm.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { EmiComponent } from './emi/emi.component';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { MetertocmComponent } from './metertocm/metertocm.component';
     CubeComponent,
     BmiComponent,
     ConverterComponent,
-    MetertocmComponent
+    MetertocmComponent,
+    RegisterComponent,
+    LoginComponent,
+    EmiComponent
   ],
   imports: [
     BrowserModule,
