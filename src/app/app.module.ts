@@ -12,6 +12,7 @@ import { MetertocmComponent } from './metertocm/metertocm.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { EmiComponent } from './emi/emi.component';
+import { NavComponent } from './nav/nav.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { EmiComponent } from './emi/emi.component';
     MetertocmComponent,
     RegisterComponent,
     LoginComponent,
-    EmiComponent
+    EmiComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

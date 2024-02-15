@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EmiComponent } from './emi.component';
+import { NavComponent } from './nav.component';
 
-describe('EmiComponent', () => {
-  let component: EmiComponent;
-  let fixture: ComponentFixture<EmiComponent>;
+describe('NavComponent', () => {
+  let component: NavComponent;
+  let fixture: ComponentFixture<NavComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [EmiComponent]
+      declarations: [NavComponent]
     });
-    fixture = TestBed.createComponent(EmiComponent);
+    fixture = TestBed.createComponent(NavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
