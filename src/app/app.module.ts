@@ -13,6 +13,8 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { EmiComponent } from './emi/emi.component';
 import { NavComponent } from './nav/nav.component';
+import { EmployeesComponent } from './employees/employees.component';
+import{HttpClientModule} from '@angular/common/http'
 
 
 @NgModule({
@@ -26,13 +28,16 @@ import { NavComponent } from './nav/nav.component';
     RegisterComponent,
     LoginComponent,
     EmiComponent,
-    NavComponent
+    NavComponent,
+    EmployeesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

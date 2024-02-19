@@ -1,0 +1,16 @@
+<div class="container">
+<div class="row d-flex mt-5">
+   <div class="col-3 mb-4"*ngFor="let emp of employees">
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+          {{emp.name}}
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{emp.username}}</li>
+          <li class="list-group-item">{{emp.phone}}</li>
+          <li class="list-group-item">{{emp.email}}</li>
+        </ul>
+      </div>
+   </div>
+</div>
+</div>
